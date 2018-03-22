@@ -1,62 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rayan Abdirahman | Developer </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- fontawsome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="navbar"></a>
 
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CV</a>
-                </li>
-            </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              Ayan Mohamed
+            </a>
+          </div>
         </div>
-    </nav>
-
-    <div class="main">
-        <section class="jumbotron text-left">
-            <div class="container">
-                <h1 class="jumbotron-heading">Hello there! 👋 </h1>
-                <p class="lead text-muted">
-                    My name is Rayan and I'm a Front-end Developer. I'm currently working at Barclays.
-                </p>
-            </div>
-        </section>
-
-        <section class="album projects">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-md-12">
-                        <div class="card mb-4 box-shadow">
-                            <h2 class="text-center">Projects under construction... 🔧</h2>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-        </section>
-
+        <div class="col-md-6">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="#skils">Skills</a></li>
+            <li role="presentation"><a href="#projects">Projects</a></li>
+            <li role="presentation"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
 
 
+
+  <!-- Jumbo -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="jumbotron-heading">Frontend Developer based in London</h1>
+          <p class="lead">Currently working @ Barclays</p>
+          <a class="btn btn-primary btn-lg" href="https://github.com/rayanabdirahman" target="_blank"> <i class="fa fa-github"></i> Github</a>
+          <a class="btn btn-primary btn-lg" href="mailto:someone@example.com?Subject=Lets%20work%20together" target="_top">
+            <i class="fa fa-envelope"></i>
+            Get in contact
+          </a>
+        </div>
+
+        <div class="col-md-5">
+          <img class="jumbotron--image" src="img/js-yellow.svg" alt="Javascript frameworks" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Skills sections -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section">
+            <a name="skills"></a>
+            <h1 class="text-center">🛠️  Tech I like to build with</h1>
+        </div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/html.svg" alt="html 5 logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/css.svg" alt="CSS logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/javascript.svg" alt="Javascript logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/bootstrap.svg" alt="bootstrap logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/sass.svg" alt="sass logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/node.svg" alt="node logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/sketch.svg" alt="sketch logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/pug.svg" alt="pug logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/npm.svg" alt="pug logo"/></div>
+        <div class="col-md-4 tech"><img class="tech--logo" src="img/react.svg" alt="pug logo"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work sections -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section">
+            <a name="projects"></a>
+            <h1 class="text-center">💼 Projects </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact sections -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section">
+            <a name="contact"></a>
+            <h1 class="text-center"> 🤙  Get in contact </h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>

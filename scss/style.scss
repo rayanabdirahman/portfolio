@@ -1,0 +1,84 @@
+//Colors
+$background-color: #212331;
+$white: #fff;
+$dark-grey: #d2d2d5;
+$btn-primary: #313341;
+$section-divider: #4e4f5a;
+
+body {
+  background-color: $background-color;
+  color: $white;
+}
+
+h1 {
+  font-size: 63px;
+}
+
+//Navbar
+.navbar-dark {
+  a {
+    color: $dark-grey;
+  }
+  padding-top: 40px;
+}
+
+.nav {
+  float: right;
+}
+
+
+.navbar-dark,
+.jumbotron {
+  background-color: $background-color;
+  color: $white;
+}
+
+
+//Jumbotron
+.jumbotron {
+  p {
+    color: $dark-grey;
+  }
+
+  .btn-primary {
+    margin-top: 60px;
+    margin-right: 10px;
+  }
+}
+
+
+.jumbotron--image {
+  width: 400px;
+}
+
+
+
+//btn
+.btn {
+  width: 200px;
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  border-color: $dark-grey;
+}
+
+
+
+
+// Section
+.section {
+  border-top: 1px solid $section-divider;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+.tech {
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+.tech--logo {
+  height: 100px;
+}
