@@ -3,4 +3,4 @@ A simple, minimally designed [website](https://rayanabdirahman.com/) built to sh
 
 # Built with
 * [Bootstrap](https://getbootstrap.com/)
-* CSS
+* SCSS

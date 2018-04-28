@@ -1,84 +1,86 @@
-//Colors
-$background-color: #212331;
-$white: #fff;
-$dark-grey: #d2d2d5;
-$btn-primary: #313341;
-$section-divider: #4e4f5a;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+//variables
+$blue: #29B6F6;
+$green: #26A69A;
 
 body {
-  background-color: $background-color;
-  color: $white;
+  font-family: 'Lato', sans-serif;
 }
 
-h1 {
-  font-size: 63px;
+.main {
+  padding-top: 60px;
 }
 
-//Navbar
-.navbar-dark {
-  a {
-    color: $dark-grey;
+.intro {
+  margin-top:60px;
+
+  h1 {
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-size: 56px;
   }
-  padding-top: 40px;
-}
 
-.nav {
-  float: right;
-}
-
-
-.navbar-dark,
-.jumbotron {
-  background-color: $background-color;
-  color: $white;
-}
-
-
-//Jumbotron
-.jumbotron {
   p {
-    color: $dark-grey;
+    font-size: 36px;
+    font-weight: 400;
+
+    span {
+      text-decoration: underline;
+      color: $green;
+    }
+  }
+}
+
+.about {
+  margin-top:60px;
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.work {
+  margin-top:60px;
+
+  .card {
+    width: 100%;
+    background-color: red;
+    height: 300px;
+    display: inline-block;
+    margin-top: 30px;
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.contact {
+  margin:60px 0;
+
+  h1 {
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-size: 56px;
   }
 
-  .btn-primary {
-    margin-top: 60px;
-    margin-right: 10px;
+  p {
+    font-size: 24px;
+    font-weight: 300;
   }
 }
 
-
-.jumbotron--image {
-  width: 400px;
-}
-
-
-
-//btn
-.btn {
-  width: 200px;
-}
-
-.btn-primary {
-  background-color: $btn-primary;
-  border-color: $dark-grey;
-}
-
-
-
-
-// Section
-.section {
-  border-top: 1px solid $section-divider;
-  margin-top: 100px;
-  padding-top: 100px;
-}
-
-.tech {
-  margin-top: 100px;
-  text-align: center;
-}
-
-
-.tech--logo {
-  height: 100px;
+.contact__info {
+  margin-top: 30px;
+  
+  a, 
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+  }
 }
