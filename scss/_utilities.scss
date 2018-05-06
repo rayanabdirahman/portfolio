@@ -1,0 +1,54 @@
+//==============================
+// Utilities
+//=============================
+
+// Import font if Google fonts URL is defined
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// Calculate em value
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// Call colour pallet modifiers
+@function colour($palette, $shade: 'base') {
+  @return map-get(map-get($palettes, $palette), $shade);
+}
+
+// Mixins
+@mixin bg-colour($map) {
+  @each $theme, $colour in $map {
+    &--#{$theme} {
+      background-color: $colour;
+    }
+  }
+}
+
+@mixin bg-size($w, $h) {
+  width: $w;
+  height: $h
+}
+
+@mixin pseudo-el($el, $el-w: null, $el-h: null) {
+  @if $el == "before" or $el == "after" {
+    &:#{el} {
+      @extend $pseudos;
+      width: $el-w;
+      height: $el-h;
+      @content;
+    }
+  }
+  @else {
+    @warn " `#{$el}` is not a valid pseudo element"
+  }
+}
+
+@mixin img-replace($img, $w, $h, $display: 'block') {
+  background-image: url('#{$path-rel}/#{$img}');
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $display;
+}

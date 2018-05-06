@@ -1,0 +1,18 @@
+//==============================
+// Helpers
+//=============================
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%pseudos {
+  content: '';
+  display: block;
+  position: absolute;
+}
+

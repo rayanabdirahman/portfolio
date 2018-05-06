@@ -1,20 +1,20 @@
 {
-  "name": "portfolio",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "A simple, minimally designed [website](https://rayanabdirahman.com/) built to showcase personal projects 🔧",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "browser-sync start --server --files index.html \"css/*.css\""
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.9.0",
+    "uglify-js": "^3.3.23"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rayanabdirahman/portfolio.git"
+  "scripts": {
+    "build": "uglifyjs js/*.js -m -c -o build/js/script.js && cp -R css build/  && cp *.html build/ && cp -R img build/",
+    "watch-css": "sass --watch scss/style.scss:css/style.css",
+    "server": "browser-sync start --server --files index.html \"css/*.css\" \"js/*.js\"",
+    "dev": "concurrently \"npm run server\" \"npm run watch-css\" "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rayanabdirahman/portfolio/issues"
-  },
-  "homepage": "https://github.com/rayanabdirahman/portfolio#readme"
+  "license": "ISC"
 }

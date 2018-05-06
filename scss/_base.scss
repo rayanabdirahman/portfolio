@@ -1,0 +1,44 @@
+//==============================
+// Base
+//=============================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: colour(default);
+  font-size: $base__font-size;
+  font-family: $font-family;
+  line-height: ($base__line-height/$base__font-size);
+}
+
+.main {
+  height: 100vh;
+}
+
+h1 {
+  font-weight: $font-weight--bold;
+  font-size: em(48px);
+}
+
+p {
+  font-weight: $font-weight--medium;
+  font-size: em(24px);
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--bold {
+  font-weight: $font-weight--bold;
+}
+
+.text--highlight {
+  color: colour(blue)
+}
+
+.text--center {
+  text-align: center;
+}
