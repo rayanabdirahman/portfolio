@@ -12,61 +12,10 @@ $font-weight--medium: 500;
 
 // Border radius
 $border-radius--default: 5px;
-$border-radius--button: 50px;
 
 // Base Colours
-$white: #fff;
-$charcoal: #484848;
-$blue: #29b6f6;
-$dark-blue: #637eff;
-$light-blue: #aed9fb;
-$purple: #8499fc;
-$pink: #fce2e2;
-$grey: #d4d2d5;
-
-// Colour usage
-$colour-primary: $charcoal;
-$colour-secondary: $white;
-$colour-accent: $blue;
-$colour-shadow: $grey;
-
-// Colour Palette Modifiers
-$palettes: (
- default: (
-  base: $charcoal
- ),
- grey: (
-   light: lighten($grey, 12%),
-   base: $grey,
-   dark: darken($grey, 8%),
-   x-dark: darken($grey, 16%)
- ),
- pink: (
-  base: $pink
- ),
- white: (
-  base: $white
- ),
- blue: (
-  light: $light-blue,
-  base: $blue,
-  dark: $dark-blue
- ),
- purple: (
- base: $purple
- )
-);
-
-// UI Colours
-$ui-colours: (
- default: $purple,
- hover: $dark-blue
-);
-
-// Text
-$base__font-size: 16px;
-$base__line-height: 24px;
-
-// Path to assets
-$path-rel: "../img";
+$white: #fefefe;
+$light-purple: #fbf6ff;
+$dark-purple: #5962e8;
+$charcoal: #343436;
 
