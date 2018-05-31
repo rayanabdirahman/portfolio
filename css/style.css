@@ -318,9 +318,6 @@ h1 {
 h2 {
   font-size: 24px; }
 
-.section__header {
-  font-weight: 700; }
-
 .navbar {
   padding: 50px; }
 
@@ -361,5 +358,34 @@ h2 {
   background-color: #fefefe;
   border: 1px solid #5962e8;
   color: #5962e8; }
+
+.section {
+  margin-top: 30px;
+  padding-top: 50px;
+  border-top: 1px solid #f0eff1; }
+
+.section__header {
+  font-weight: 700;
+  text-align: center; }
+
+.work__item {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.work__bio {
+  max-width: 600px;
+  margin-left: 50px; }
+
+.work__tech {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+  padding: 0; }
+  .work__tech img {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */
