@@ -369,10 +369,16 @@ h2 {
   text-align: center; }
 
 .work__item {
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+
+.work__item--reverse {
+  flex-direction: row-reverse; }
+  .work__item--reverse .work__bio {
+    margin: 0 30px 0 0; }
 
 .work__bio {
   max-width: 600px;
