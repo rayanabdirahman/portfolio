@@ -1,0 +1,60 @@
+.section__header {
+  font-weight: $font-weight--bold;
+}
+
+// Navbar
+.navbar {
+  padding: 50px;
+}
+
+.navbar__nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navbar__nav__item {
+  margin-right: 20px;
+
+  a {
+    text-decoration: none;
+    color: $dark-purple;
+  }
+}
+
+// Hero
+.hero {
+  padding: 50px;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+  background-color: $light-blue;
+}
+
+.hero__footer {
+  margin-top: 30px;
+}
+
+
+// Button
+.btn {
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  color: $white;
+  border: none;
+  height: 44px;
+  font-size: 18px;
+  font-weight: $font-weight--light;
+}
+
+.btn--primary {
+  background-color: $dark-purple;
+  margin-right: 20px;
+}
+
+.btn--secondary {
+  background-color: $white;
+  border: 1px solid $dark-purple;
+  color: $dark-purple;
+}
