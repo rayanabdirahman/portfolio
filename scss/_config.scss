@@ -3,23 +3,29 @@
 //=============================
 
 // Font Stack
-$font-url--google: 'https://fonts.googleapis.com/css?family=Montserrat:300,500,700';
+$font-url--google: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500';
 $font-family: 'Montserrat', sans-serif;
+$font-size--regular: 16px;
 
 // Font Weight
-$font-weight--bold: 700;
-$font-weight--medium: 500;
+$font-weight--bold: 500;
+$font-weight--medium: 400;
 $font-weight--light: 300;
 
 // Border radius
 $border-radius: 5px;
 
 // Base Colours
+$blue: #1868d5;
+$color--primary: #051539;
+$color--secondary: #7b89ae;
+$status--available: #8cda37;
 $white: #fefefe;
-$light-purple: #fbf6ff;
 $dark-purple: #5962e8;
-$charcoal: #343436;
+$light-purple: #fbf6ff;
 $light-blue: #f0f8ff;
-$light-orange: #faebd8;
 $grey: #f0eff1;
+
+// width
+$max-width: 1440px;
 

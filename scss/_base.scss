@@ -1,26 +1,20 @@
 @import url($font-url--google);
 
 body {
-  font-family: $font-family;
-  font-weight: $font-weight--light;
-  color: $charcoal;
+    font-size: $font-size--regular;
+    font-family: $font-family;
+    font-weight: $font-weight--medium;
+    color: $color--primary;
 }
 
-.main {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+a {
+    font-size: $font-size--regular;
+    text-decoration: none;
+    color: $color--secondary;
 
-p {
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 30px;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 24px;
+    &:hover,
+    &:active,
+    &visited {
+        color: $blue;
+    }
 }

@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "concurrently": "^3.5.1",
-    "node-sass": "^4.9.0",
-    "uglify-js": "^3.3.23"
+    "concurrently": "^3.5.1"
   },
   "scripts": {
-    "build": "uglifyjs js/*.js -m -c -o build/js/script.js && cp -R css build/  && cp *.html build/ && cp -R img build/",
-    "watch-css": "sass --watch scss/style.scss:css/style.css",
-    "server": "browser-sync start --server --files index.html \"css/*.css\" \"js/*.js\"",
-    "dev": "concurrently \"npm run server\" \"npm run watch-css\" "
+    "server": "browser-sync start --server --files index.html \"css/*.css\"",
+    "sass:watch": "sass --watch scss/style.scss:css/style.css --style compressed",
+    "dev": "concurrently \"npm run server\" \"npm run sass:watch\" "
   },
   "keywords": [],
   "author": "",
