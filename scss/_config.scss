@@ -3,9 +3,15 @@
 //=============================
 
 // Font Stack
-$font-url--google: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500';
-$font-family: 'Montserrat', sans-serif;
+$font-url--google-primary: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500';
+$font-url--google-italic: 'https://fonts.googleapis.com/css?family=Pacifico';
+$font-family--regular: 'Montserrat', sans-serif;
+$font-family--italic: 'Pacifico', cursive;
 $font-size--regular: 16px;
+
+// Set fonts
+@import url($font-url--google-primary);
+@import url($font-url--google-italic);
 
 // Font Weight
 $font-weight--bold: 500;
@@ -16,15 +22,10 @@ $font-weight--light: 300;
 $border-radius: 5px;
 
 // Base Colours
-$blue: #1868d5;
-$color--primary: #051539;
-$color--secondary: #7b89ae;
-$status--available: #8cda37;
-$white: #fefefe;
-$dark-purple: #5962e8;
-$light-purple: #fbf6ff;
-$light-blue: #f0f8ff;
-$grey: #f0eff1;
+$color--dark: #3d4364;
+$color--light: #fefefe;
+$background-color--blue: #005af5;
+$color--primary: $color--dark;
 
 // width
 $max-width: 1440px;
