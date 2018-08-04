@@ -1,32 +1,76 @@
-//==============================
-// Global Config
-//=============================
+/*================================================
+    Config
+==================================================*/
 
-// Font Stack
-$font-url--google-primary: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500';
-$font-url--google-italic: 'https://fonts.googleapis.com/css?family=Pacifico';
-$font-family--regular: 'Montserrat', sans-serif;
-$font-family--italic: 'Pacifico', cursive;
-$font-size--regular: 16px;
-
-// Set fonts
-@import url($font-url--google-primary);
-@import url($font-url--google-italic);
-
-// Font Weight
+// font variables
+$font-family--google-url: 'https://fonts.googleapis.com/css?family=Roboto:400,500';
+$font-family: 'Roboto', sans-serif;
+$font-weight--regular: 400;
 $font-weight--bold: 500;
-$font-weight--medium: 400;
-$font-weight--light: 300;
+$font-size--regular: 16px;
+$font-size--heading: 24px;
 
-// Border radius
-$border-radius: 5px;
+// colour variables
+$charcoal--dark: #343436;
+$charcoal--light: #4D4D51;
+$grey--light: #F0EFF1;
+$green: #00CF7D;
+$blue: #D8E8FD;
+$purple: #6D69FD;
+$orange: #FFE9CE;
+$white: #fff;
+$color--primary: $charcoal--light;
+$color--heading: $charcoal--dark;
+$color--link: $purple;
+$color--highlight--green: $green;
 
-// Base Colours
-$color--dark: #3d4364;
-$color--light: #fefefe;
-$background-color--blue: #005af5;
-$color--primary: $color--dark;
+// border
+$border-size: 1px;
+$border-style: solid;
+$border-color: $grey--light;
 
-// width
-$max-width: 1440px;
+// link variables
+$link-text-decoration: none;
+$link-hover-text-decoration: underline;
+
+// import font family
+@import url($font-family--google-url);
+
+// set body styles
+body {
+  font-family: $font-family;
+  font-size: $font-size--regular;
+  font-weight: $font-weight--regular;
+  color: $color--primary;
+}
+
+// set heading styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color--heading;
+  font-weight: $font-weight--bold;
+}
+
+// set link styles
+a {
+  color: $color--link;
+  text-decoration: $link-text-decoration;
+
+  &:hover {
+    text-decoration: $link-hover-text-decoration;
+  }
+}
+
+// modifiers
+.text--green {
+  color: $color--highlight--green;
+}
+
+.text--bold {
+  font-weight: $font-weight--bold;
+}
 

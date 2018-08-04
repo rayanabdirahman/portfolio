@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <!-- Meta Description -->
-  <meta name="description" content="Portfolio site of Ayan Mohamed">
+  <meta name="description" content="Ayan  Ayan Mohamed's Portfolio site">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="https://rayanabdirahman.com/favicon.ico">
@@ -15,22 +15,92 @@
   <!-- Document Title -->
   <title> 🔥 Ayan Mohamed | Frontend Developer Portfolio</title>
 
+  <!-- Normalize stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="jumbo">
-    <div class="jumbo_content">
-      <h1 class="jumbo_title">Front-end Developer</h1>
-      <p class="jumbo_text">
-        👋 Hi, I'm glad you made it here! I'm Ayan, a Web developer living in 🏙️ London. I'm
-        currently employed full-time as a Front-end developer at 🏢 Barclays.
-      </p>
-      <p class="jumbo_text">
-        Feel free to drop me an email at
-        <span class="text--underline text--bold"> ✉️ ayanmohamed65@gmail.com</span> and checkout my work on 
-        <a href="https://github.com/rayanabdirahman" target="_blank" class="text--underline text--bold"> 📂 GitHub</a>
-      </p>
-    </div>
-  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a class="nav__item" href="#work">Work</a>
+      <a class="nav__item" href="#skills">Skills</a>
+      <a class="nav__item" href="#">Resume</a>
+      <a class="nav__item" href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- End Of Header -->
+
+  <main>
+
+    <!-- Section: Hero -->
+    <section class="section section-hero">
+      <h1> 👋 Hey! I'm Ayan. A Frontend developer from London 🇬🇧 </h1>
+      <p>I'm currently employed full time at Barclays</p>
+      <p>Availablity: <span class="text--green">available</span></p>
+    </section>
+    <!-- End Of Section: Hero -->
+
+    <!-- Section: Work -->
+    <section class="section section-work" id="work">
+      <h2>Checkout my Work</h2>
+      <p>You can find the codebase for the projects I've worked on on <a href="https://github.com/rayanabdirahman" target="_blank">github</a></p>
+    </section>
+    <!-- End Of Section: Work -->
+
+    <!-- Section: Skills -->
+    <section class="section section-skills" id="skills">
+      <h2>Here are the tools in my toolbox</h2>
+
+      <!-- Setup -->
+      <article>
+        <h3>Setup</h3>
+        <ul>
+          <li>Editor: <span class="text--bold">Vim <a href="#">You can find my .vimrc file in the dotfile repo on github</a></span></li>
+          <li>Computer: <span class="text--bold">Macbook Pro &amp; Macbook Air</span></li>
+          <li>Browser: <span class="text--bold">I switch between Firefox &amp; Chrome</span></li>
+        </ul>
+      </article>
+      <!-- End Of Setup -->
+
+      <!-- Core -->
+      <article>
+        <h3>Core</h3>
+        <ul>
+          <li>Frontend: <span class="text--bold">HTML, CSS, Javascript</span></li>
+          <li>Backend: <span class="text--bold">Node</span></li>
+          <li>Database: <span class="text--bold">MongoDB</span></li>
+        </ul>
+      </article>
+      <!-- End Of Core -->
+
+      <!-- Frameworks -->
+      <article>
+        <h3>Frameworks</h3>
+        <ul>
+          <li>Templating: <span class="text--bold">EJS, PUG, JADE</span></li>
+          <li>CSS: <span class="text--bold">Bootstrap, Sass</span></li>
+          <li>Javascript: <span class="text--bold">React, Redux, jQuery</span></li>
+          <li>Node: <span class="text--bold">Express</span></li>
+          <li>Testing: <span class="text--bold">Mocha, Chai, Jest</span></li>
+          <li>Run process: <span class="text--bold">Grunt, Gulp, NPM</span></li>
+        </ul>
+      </article>
+      <!-- End Of Frameworks -->
+
+      
+    </section>
+    <!-- End Of Section: Skills -->
+
+    <!-- Section: Contact -->
+    <section class="section section-contact" id="contact">
+      <h2>Lets work together</h2>
+      <p>Send me an email at <a href="mailto:ayanmohamed65@gmail.com">ayanmohamed65@gmail.com</a></p>
+    </section>
+    <!-- End Of Section: Contact -->
+  </main>
 </body>
 </html>
