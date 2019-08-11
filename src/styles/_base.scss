@@ -1,0 +1,48 @@
+// font
+$font-family: 'Assistant', sans-serif;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 700;
+$font-weight-bold: 700;
+$font-colour: $colour-gray;
+
+// header text
+$header-colour: $colour-black;
+
+// links
+$link-default-color: $colour-gray;
+$link-hover-color: $colour-black;
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  color: $font-colour;
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-colour;
+  font-weight: 700;
+}
+
+a {
+  color: $link-default-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.link {
+  font-weight: 600;
+  color: $link-colour;
+  text-decoration: underline;
+
+  &:hover {
+    color: $link-colour-dark;
+  }
+}
