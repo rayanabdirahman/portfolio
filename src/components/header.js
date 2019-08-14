@@ -18,7 +18,7 @@ const Header = () => {
                   src="https://via.placeholder.com/150/FF0000/FFFFFF"
                   roundedCircle
                 />
-                <Figure.Caption>Ayan Mohamed</Figure.Caption>
+                <Figure.Caption>Rayan Mohamed</Figure.Caption>
               </Figure>
             </Navbar.Brand>
           </Col>
