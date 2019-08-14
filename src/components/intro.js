@@ -8,7 +8,7 @@ const Intro = () => {
         <Row>
           <Col xs={12} sm={12} md={10}>
             <h1>
-              Hi! I'm Ayan Mohamed, a fullstack javascript developer based in
+              Hi! I'm Rayan Mohamed, a fullstack javascript developer based in
               London.
             </h1>
             <p className="lead">
