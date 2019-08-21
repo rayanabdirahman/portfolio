@@ -8,10 +8,12 @@ const Work = () => {
       <Container>
         <Row>
           <WorkCard
-            image="https://via.placeholder.com/150"
-            title="Header 1"
-            content="Travel template featuring a slider with a swipe transition built
-              with CSS Grid and Flexbox."
+            image="https://cdn.dribbble.com/users/1425161/screenshots/5966666/attachments/1283123/cryptocompare_all.png"
+            link="https://adoring-payne-589ee3.netlify.com/"
+            github="https://github.com/rayanabdirahman/crypto-dashboard"
+            title="CryptoCompare"
+            content="A crypto currancy dashboard to demonstarte react data visualization."
+            footer="Built with: React, Highcharts, styled-componets &amp; CSS Grid"
           />
           <WorkCard
             image="https://via.placeholder.com/150"
