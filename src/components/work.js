@@ -12,8 +12,8 @@ const Work = () => {
             link="https://adoring-payne-589ee3.netlify.com/"
             github="https://github.com/rayanabdirahman/crypto-dashboard"
             title="CryptoCompare"
-            content="A crypto currancy dashboard to demonstarte react data visualization."
-            footer="Built with: React, Highcharts, styled-componets &amp; CSS Grid"
+            content="A crypto currancy dashboard"
+            footer="Built to demonstarte data visualization using: React, Highcharts, styled-componets &amp; CSS Grid"
           />
           <WorkCard
             image="https://via.placeholder.com/150"
