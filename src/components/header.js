@@ -26,7 +26,9 @@ const Header = () => {
         <Row>
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#work">Work</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="#contact">
+            <a href="mailto:ayanmohamed65@gmail.com">Contact</a>
+          </Nav.Link>
         </Row>
       </Container>
     </Navbar>
